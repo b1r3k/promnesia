@@ -276,7 +276,7 @@ unwrap(document.getElementById('backend_status_id')).addEventListener('click', d
     const host  = await o_host .getValue()
     const token = await o_token.getValue()
 
-    const second = 1000;
+    const second = 3000;
     await fetchTimeout(`${host}/status`, {
         method: 'POST',
         headers: {
